@@ -1,4 +1,4 @@
 season_8_theme
-==============
+==================
 
-Revised theme, circa Season 8
+This is a WordPress Theme

@@ -1,0 +1,1 @@
+<?php /* Template Name: Home */ $tdir = get_bloginfo('template_directory'); get_header(); ?><section id="main"><section id="upcoming"><h1>Upcoming Events</h1><a href="mailto:info@theymc.com" title="Got an idea?" target="_blank">Got an idea for a talk? Let us know!</a></section></section><script src="assets/js/app.js"></script><?php get_footer(); ?>

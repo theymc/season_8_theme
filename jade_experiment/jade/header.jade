@@ -1,0 +1,25 @@
+<?php $tdir = get_bloginfo('template_directory'); ?>
+!!! 5
+//if lt IE 7
+    html(class="no-js lt-ie9 lt-ie8 lt-ie7", lang="en")
+//if IE 7
+    html(class="no-js lt-ie9 lt-ie8", lang="en")
+//if IE 8
+    html(class="no-js lt-ie9", lang="en")
+// [if gt IE 8] <!
+html(class='no-js', lang='en')
+    // <![endif]
+    head
+        <link rel="stylesheet" href="<?php echo $tdir; ?>/assets/css/normalize.css" />
+        // link(rel="stylesheet",href="assets/console/console_css/console.css")
+        <link rel="stylesheet" href="<?php echo $tdir; ?>/assets/css/app.css")
+
+    // need to use normal syntax here because of dynamic class
+    <body <?php body_class(); ?>>
+    header.site
+        span.branding
+            <a href="<?php bloginfo('url'); ?>" title="The YMC">
+            <img src="<?php echo $tdir; ?>/assets/img/ymc_logo.png", alt="The YMC" />
+
+        nav.site
+            <?php wp_nav_menu(); ?>
