@@ -1,6 +1,43 @@
 header.site
-    background: $maroon
+	background: $maroon
 
-    .site_title
-        display: block
-        text-align: center
+	.site_title
+		display: block
+		text-align: center
+
+	a, img 
+		border: none
+		outline: none
+
+	a:-webkit-any-link 
+		color: -webkit-link
+		cursor: auto
+
+	nav.site
+		background: white
+		text-align: center
+		width: 90%
+		max-width: 24em
+		margin: auto
+
+		ul
+			padding: 0
+			margin: 0
+			list-style: none
+
+		li
+			display: inline-block
+			width: 25%
+
+		.current-menu-item
+			a
+				color: $oranger
+
+		a
+			display: block
+			padding: 1em 0
+			text-decoration: none
+			color: $maroon
+			font-size: 1.125em
+			padding: 0.75em 0 0.25em
+

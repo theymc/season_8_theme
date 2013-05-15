@@ -1,20 +1,169 @@
 .course_list
     padding: 0
-    margin: 0
+    margin: 0 0
     list-style: none
     clear: both
+    position: relative
+    top: 0
+    text-align: center
 
-    li
+    p
+        margin: 0.3125em 1.25em
+        color: #6e6e6e
+        font-size: 0.875em
+
+    > li
         width: 18.75em
         min-height: 27.5em
         float: left
-        border: 1px solid $peach
-        margin: 1em
+        border: 0.0625em solid $peach
+        position: relative
+        margin: 1.25em 0
+        text-align: left
 
-        figure
-            padding: 0
+        h3
+            font-size: 1.375em
+            font-weight: 100
+            margin: 0.625em 0.4em 0 0.75em
+
+    .event.details, li .learnmore
+        font-weight: 100
+        margin: 0em 1.25em
+        
+    .event
+        font-size: 0.85em
+        color: $oranger
+        text-decoration: none
+
+    li
+        figure.location
             margin: 0
+            padding: 0
+        .event_cta, wufoo input.btTxt
+            color: white
+            text-transform: uppercase
+            display: block
+            text-decoration: none
+            background: $orange
+            padding: 0.375em 0.9375em
+            border: 0.1em solid $orangered
+            font-size: 0.875em
+            line-height: 1.3em
+            margin: 0 0 0 0.625em
+            float: right
+            position: relative
+            top: -4.2em
+            left: -1.2em
+
+        .learnmore
+            display: block
+            font-weight: lighter
+            color: $oranger
+            figure
+                padding: 0
+                margin: 0
+            font-size: 0.5em
+            text-decoration: none         
+            a:hover
+                text-decoration: underline
+
+        h3, .event.details
+            display: block
+            font-weight: lighter
+            color: #611f1d
+            figure
+                padding: 0
+                margin: 0
+
+    .takeaways h3
+        color: white
 
 
-        .takeaways
-            display: none
+    .session_stats
+        background: #601f1d
+        color: white
+        overflow: hidden
+        padding: -0.7em 0
+        clear: both
+        position: absolute
+        z-index: 777
+        bottom: 0
+        width: 100%
+
+
+        dl
+            /*width: 33%*/
+            width: 50%
+            float: left
+            text-align: center
+            position: relative
+            height: 50px
+        
+
+        dt
+            position: absolute
+            bottom: -1em
+            left: -0.5em
+            width: 100%
+            font-size: .7em
+            text-transform: uppercase
+            color: #b66c6a
+        
+        dd
+            position: absolute
+            top: 0.5em
+            left: -1.85em
+            width: 100%
+            font-size: 1.6em
+            font-weight: 100
+        
+    figure.session_lead 
+        position: absolute
+        z-index: 888
+        bottom: 3em
+        left: -1.4em
+        width: 100%
+
+        .frame
+            border: 0.125em solid #f15211
+            border-radius: 2.5em
+            float: left
+            overflow: hidden
+            background: white
+            width: 4.25em
+            height: 4.25em
+            box-sizing: border-box
+
+        .pro_title
+            color: #f15e22
+            font-size: 0.6875em
+            margin: 0
+            position: relative
+            left: 1em
+            top: 1.5em
+            line-height: 0em
+            font-weight: 100
+
+        h4
+            margin: 0
+            position: relative
+            left: 0.72em
+            top: 1.125em
+            color: #6e6e6e
+            line-height: 0em
+            font-weight: 100
+
+    .takeaways, .takeaways > a
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        background: #f15211
+        width: 100%
+        height: 27.5em
+        z-index: 900
+
+/* .single-programs p, .single-programs h4
+    /* clear: both
+
+
