@@ -16,8 +16,8 @@ header.site
 	nav.site
 		background: white
 		text-align: center
-		width: 90%
-		max-width: 24em
+		width: 100%
+		max-width: 100%
 		margin: auto
 
 		ul
@@ -25,19 +25,45 @@ header.site
 			margin: 0
 			list-style: none
 
-		li
-			display: inline-block
-			width: 25%
+			li
+				display: inline-block
+				width: 28%
+				font-weight: bold
+				font-size: 1.2em
+				margin: 2%
 
 		.current-menu-item
 			a
-				color: $oranger
+				color: #f15211
 
 		a
 			display: block
 			padding: 1em 0
 			text-decoration: none
-			color: $maroon
+			color: #601f1d
 			font-size: 1.125em
 			padding: 0.75em 0 0.25em
+body
+	margin: 0
+	padding: 0
 
+/*for tablet computer such as iPad*/
+@media screen and (min-width:48em)
+	header.site
+		nav.site
+			width: 90%
+			max-width: 90%
+
+
+/*for smartphones with screen width lower than 720px. including iPhone and Samsung Galaxy Mega 6.3*/
+@media screen and (min-width:60em)
+	header.site
+		nav.site
+			width: 90%
+			max-width: 24em
+			ul
+				li
+					font-weight: lighter
+			a
+				font-size: 1.125em
+				padding: 0.75em 0 0.02em

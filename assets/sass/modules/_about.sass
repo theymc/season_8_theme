@@ -1,41 +1,50 @@
 section.about 
-	width: 61%
-	max-width: 61%
-	float: right
 	border-top: 0.0625em solid #e7e7e7
-	box-sizing: border-box
-	text-align: center
-
+	width: 90%
+	max-width: 30em
+	margin: auto
+	padding: auto
 	p
 	text-align: left
 	font-size: 0.75em
 
 	figure
-		max-width: 630px
-		float: left
-		margin: 1.25em 0 0 1.375em
+		max-width: 40em
+		padding: auto
+		text-align: center
 		img
-			float: left
-			margin: 0 1.25em 0 0
-		
+			margin-left: 10%
+
 		figcaption
+			margin: auto
 			position: relative
-			top: 0px
+			left: 2em
 			line-height: 1.25em
+			font-size: 1.2em
+			text-align: left
 
-section.newsletter
-	width: 39%
-	max-width: 39%
-	float: left
-	border-top: 0.0625em solid #E7E7E7
-	border-right: 0.0625em solid #E7E7E7
-	box-sizing: border-box
-	clear: both
+@media screen and (min-width: 48em)
+	section.about 
+		width: 61%
+		max-width: 41em
+		float: left
+		text-align: left
 
-	div
-		max-width: 18em
-		float: right
+		figure
+			text-align: left
 
-section.about figure, section.newsletter
-	div
-		margin: 18px 1.25em 0 2.5em
+			figcaption
+				margin: -11em -1em 0 14em
+				padding-left: 0.8em
+				width: 54%
+				position: relative
+				left: 0
+			img
+				margin-left: 0
+    
+@media screen and (min-width: 60em)
+	section.about
+		width: 61%
+		max-width: 61%
+		max-width: 40em
+		float: left
